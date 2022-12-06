@@ -6,6 +6,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: @primary_black;
   color: @primary_white;
+  text-align: center;
 }
 
 .container {
@@ -19,8 +20,7 @@ body {
   overflow-x: auto;
   margin: 0 auto;
   padding: 1.2rem;
-  grid-gap: 0.6rem;
-  border: 1px solid red;
+  grid-gap: 1.5rem;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -57,5 +57,22 @@ body {
       font-size: 1.2rem;
       font-weight: 400;
     }
+  }
+}
+
+#add-story-btn {
+  max-width: 8rem;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  background: none;
+  color: @primary_white;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: 1px solid #00dbde;
+  cursor: pointer;
+  &:hover {
+    background: #00dbde;
   }
 }
