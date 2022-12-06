@@ -1,0 +1,5 @@
+{
+  "watchFolder": "./public/styles/src",
+  "outputFolder": "./public/styles/dist",
+  "mainFile": "index.less"
+}
