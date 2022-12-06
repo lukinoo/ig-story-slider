@@ -2,7 +2,6 @@ const container = document.querySelector(".container");
 const add_story_button = document.getElementById("add-story-btn");
 
 const API_URI = "https://randomuser.me/api/";
-const QUANTITY = 16;
 
 const createUserStory = (data) => {
   const story = document.createElement("div");
@@ -39,5 +38,6 @@ const fetchRandomUser = async () => {
 };
 
 add_story_button.addEventListener("click", () => {
+  container.scrollLeft = container.scrollWidth;
   fetchRandomUser();
 });
